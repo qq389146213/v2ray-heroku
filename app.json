@@ -3,17 +3,13 @@
   "description": "deploy V2ray to Heroku.",
   "keywords": ["V2ray"],
   "env": {
-    "V2RAY_VER": {
-       "description": "输入v2ray Core 版本",
+    "CADDY_H2_USER": {
+       "description": "输入h2 用户名",
        "value": "3.22"
      },
-    "UUID": {
-       "description": "Vmess协议默认UUID，请输入自己的UUID",
+    "CADDY_H2_PWD": {
+       "description": "输入h2 密码",
        "value": "8fd6dadc-0d59-4ae7-93bb-e6b8a231c2c2"
-     },
-    "V2RAY_RAY_BUFFER_SIZE": {
-       "description": "每个连接的缓存大小，单位MB",
-       "value": "6"
      },
     "CADDY_VER": {
        "description": "输入caddy 版本",
@@ -30,21 +26,9 @@
     "CADDY_LS_IP": {
        "description": "配置caddy 监听的ip 保持默认值",
        "value": "0.0.0.0"
-     },
-    "V2_WS_PATH": {
-       "description": "输入v2ray ws 的 path",
-       "value": "/mytestws"
-     },
-    "V2_WS_IP": {
-       "description": "输入v2ray ws 监听的地址 保持默认值",
-       "value": "127.0.0.1"
-     },
-    "V2_WS_PORT": {
-       "description": "输入v2ray ws 监听的端口",
-       "value": "12345"
      }
   },
-  "website": "https://github.com/zusrt/v2ray-heroku",
-  "repository": "https://github.com/zusrt/v2ray-heroku",
+  "website": "https://github.com/qq389146213/v2ray-heroku",
+  "repository": "https://github.com/qq389146213/v2ray-heroku",
   "stack": "container"
  }
